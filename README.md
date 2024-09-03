@@ -56,17 +56,3 @@ The script processes air quality data for Shanghai, visualizes historical trends
 ### Data Source
 
 The data is expected to be in a CSV file named 'Shanghai.csv' with a 'dt' column for timestamps and separate columns for each air quality component.
-
-### Customization
-
-- Adjust the `start_date` and `end_date` variables to change the historical data range
-- Modify the SARIMA model parameters in the `fit_sarima` function to optimize for different components
-
-### Output
-
-The script produces:
-- Time series plots for historical data of each component
-- SARIMA forecast plots with confidence intervals
-- Model summaries and forecast values printed to the console
-
-This project provides valuable insights into Shanghai's air quality trends and offers predictions that could be useful for environmental planning and public health initiatives[1][2][4][5].
