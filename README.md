@@ -48,7 +48,7 @@ The script processes air quality data for Shanghai, visualizes historical trends
 1. Ensure 'Shanghai.csv' is in the same directory as the script
 2. Run the script:
    ```
-   python air_quality_forecast.py
+   python air_quality_forecast.py mega slay
    ```
 
 3. The script will generate plots and print analysis results for each air quality component
