@@ -1,4 +1,4 @@
-## Air Quality Forecasting for Shanghai
+# Air Quality Forecasting for Shanghai
 
 This project analyzes and forecasts air quality components in Shanghai using historical data and SARIMA (Seasonal AutoRegressive Integrated Moving Average) models.
 
