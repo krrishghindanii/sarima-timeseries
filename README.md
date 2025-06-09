@@ -122,14 +122,3 @@ We welcome contributions that enhance the forecasting models, add more cities, o
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
-
-## Contact
-
-For inquiries, collaborations, or access to reports:
-
-\Krrish GHindani
-\krrishghindani21@gmail.com
-GitHub: [@krrishghindani](https://github.com/krrishghindani)
----
-
-
