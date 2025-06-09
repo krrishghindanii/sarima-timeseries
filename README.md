@@ -1,58 +1,135 @@
-## Air Quality Forecasting for Shanghai, Delhi, Indore, LA, and Imphal
+# Urban Air Quality Forecasting & Improvement Using SARIMA
 
-This project analyzes and forecasts air quality components in Shanghai using historical data and SARIMA (Seasonal AutoRegressive Integrated Moving Average) models.
+Forecasting and improving air quality across Shanghai, Delhi, Indore, Los Angeles, and Imphal using time-series modeling.
 
-### Project Overview
+---
 
-The script processes air quality data for Shanghai, visualizes historical trends, and generates forecasts for various air quality components using SARIMA models. It focuses on the following air quality indicators:
+## Overview
 
-- AQI (Air Quality Index)
-- CO (Carbon Monoxide)
-- NO (Nitric Oxide)
-- NO2 (Nitrogen Dioxide)
-- O3 (Ozone)
-- SO2 (Sulfur Dioxide)
-- PM2.5 (Fine Particulate Matter)
-- PM10 (Respirable Particulate Matter)
-- NH3 (Ammonia)
+This project utilizes SARIMA (Seasonal AutoRegressive Integrated Moving Average) models to analyze and forecast air quality metrics for five major cities: Shanghai, Delhi, Indore, Los Angeles, and Imphal. The objective is to deliver accurate forecasts and actionable insights to aid environmental planning and policy implementation.
 
-### Features
+---
 
-1. Data preprocessing:
-   - Loads data from 'Shanghai.csv'
-   - Filters data for the last 90 days
-   - Resamples data to hourly intervals
+## Objectives
 
-2. Visualization:
-   - Plots historical trends for each air quality component
+* Analyze historical air quality data across multiple cities
+* Visualize pollutant trends and temporal patterns
+* Generate short-term forecasts for key pollutants
+* Deliver detailed reports to inform environmental improvement strategies
+* Collaborate with local authorities (e.g., the Indian Municipal Corporation for Indore) to recommend and implement changes
 
-3. SARIMA Modeling:
-   - Fits a SARIMA model to each air quality component
-   - Generates 90-day forecasts
-   - Visualizes forecasts with confidence intervals
+---
 
-4. Analysis Output:
-   - Displays model summaries
-   - Prints forecast values
+## Forecasted Air Quality Components
 
-### Requirements
+* AQI – Air Quality Index
+* CO – Carbon Monoxide
+* NO – Nitric Oxide
+* NO₂ – Nitrogen Dioxide
+* O₃ – Ozone
+* SO₂ – Sulfur Dioxide
+* PM₂.₅ – Fine Particulate Matter
+* PM₁₀ – Respirable Particulate Matter
+* NH₃ – Ammonia
 
-- Python 3.x
-- pandas
-- numpy
-- matplotlib
-- statsmodels
+---
 
-### Usage
+## Features
 
-1. Ensure 'Shanghai.csv' is in the same directory as the script
-2. Run the script:
+### Data Preprocessing
+
+* Loads city-level data from CSV files (e.g., `Shanghai.csv`)
+* Filters data to the last 5 years
+* Resamples data to hourly intervals
+* Cleans and prepares data for modeling
+
+### Visualization
+
+* Plots historical trends for each pollutant
+* Performs time series decomposition to identify seasonality and trend
+* Generates pollutant-wise visualizations and comparisons
+
+### SARIMA Modeling
+
+* Fits SARIMA models for each pollutant in every city
+* Performs parameter tuning using AIC/BIC for model selection
+* Generates 90-day forecasts with confidence intervals
+* Produces forecast plots for intuitive understanding
+
+### Real-World Impact
+
+* Submitted a comprehensive air quality report for **Indore** to the **Indian Municipal Corporation**
+* Identified high-risk zones with critical pollution levels
+* Recommended targeted interventions and policy measures
+* Contributed to local environmental improvement efforts based on data-driven evidence
+
+---
+
+## Tech Stack
+
+* Python 3.x
+* pandas – Data manipulation
+* numpy – Numerical computing
+* matplotlib – Data visualization
+* statsmodels – SARIMA modeling
+
+---
+
+## How to Use
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/krrishghindanii/sarima-timeseries.git
+   cd sarima-timeseries
    ```
+
+2. Place your city dataset(s) (e.g., `Shanghai.csv`) in the project directory.
+
+3. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Run the script:
+
+   ```bash
    python air_quality_forecast.py
    ```
 
-3. The script will generate plots and print analysis results for each air quality component
+The script will output pollutant-wise forecasts, trend visualizations, and summaries.
 
-### Data Source
+---
 
-The data is expected to be in a CSV file named 'Shanghai.csv' with a 'dt' column for timestamps and separate columns for each air quality component.
+## Data Format
+
+Each city dataset (CSV) should contain:
+
+* A `dt` column with timestamps
+* Separate columns for each air quality component (e.g., `PM2.5`, `NO2`, `CO`, etc.)
+
+---
+
+## Contributions & Collaboration
+
+We welcome contributions that enhance the forecasting models, add more cities, or integrate new data sources. This project also demonstrated a successful collaboration with government agencies to drive real-world environmental improvements.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Contact
+
+For inquiries, collaborations, or access to reports:
+
+\Krrish GHindani
+\krrishghindani21@gmail.com
+GitHub: [@krrishghindani](https://github.com/krrishghindani)
+---
+
+
